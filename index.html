@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Peb · Privacy policy</title>
+    <meta name="description" content="Peb is a pocket pet that grows on your daily steps. Your health data never leaves your phone." />
+    <style>
+      :root { --bg: #15110e; --card: #211b16; --line: #3a2f26; --fg: #f3ece4; --muted: #b9ab9b; --sage: #8fbf7a; --gold: #f2c94c; }
+      * { box-sizing: border-box; }
+      html { background: var(--bg); }
+      body { margin: 0; color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+      header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+      header svg { width: 64px; height: 64px; image-rendering: pixelated; flex: none; }
+      h1 { font-size: 1.8rem; line-height: 1.2; margin: 0; }
+      .sub { color: var(--muted); margin: 2px 0 0; font-size: 0.95rem; }
+      .tldr { background: var(--card); border: 2px solid var(--line); border-radius: 10px; padding: 16px 18px; margin: 24px 0; box-shadow: 4px 4px 0 #0b0907; }
+      .tldr h2 { margin-top: 0; color: var(--sage); }
+      .tldr ul { margin: 0; padding-left: 1.2em; }
+      h2 { font-size: 1.15rem; margin: 32px 0 8px; color: var(--gold); letter-spacing: 0.01em; }
+      p, li { color: var(--fg); }
+      li { margin: 4px 0; }
+      .muted { color: var(--muted); }
+      table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 0.95rem; }
+      th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+      th { color: var(--muted); font-weight: 600; }
+      code { background: #2c241d; padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+      a { color: var(--sage); }
+      footer { margin-top: 40px; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); padding-top: 16px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <!-- Peb, 16x16 pixel art -->
+        <svg viewBox="0 0 16 16" aria-hidden="true" shape-rendering="crispEdges">
+          <rect x="7" y="0" width="1" height="2" fill="#86a350" /><rect x="8" y="1" width="2" height="1" fill="#a9c873" />
+          <rect x="5" y="2" width="6" height="1" fill="#86a350" /><rect x="4" y="3" width="8" height="2" fill="#86a350" />
+          <rect x="3" y="5" width="10" height="1" fill="#6f8c47" /><rect x="3" y="6" width="10" height="6" fill="#d3c4b0" />
+          <rect x="4" y="12" width="8" height="1" fill="#d3c4b0" /><rect x="5" y="7" width="2" height="2" fill="#2a241f" />
+          <rect x="9" y="7" width="2" height="2" fill="#2a241f" /><rect x="5" y="7" width="1" height="1" fill="#f3ece4" />
+          <rect x="9" y="7" width="1" height="1" fill="#f3ece4" /><rect x="4" y="9" width="1" height="1" fill="#e88c8c" />
+          <rect x="11" y="9" width="1" height="1" fill="#e88c8c" /><rect x="7" y="10" width="2" height="1" fill="#2a241f" />
+          <rect x="5" y="13" width="2" height="1" fill="#b8a793" /><rect x="9" y="13" width="2" height="1" fill="#b8a793" />
+        </svg>
+        <div>
+          <h1>Peb privacy policy</h1>
+          <p class="sub">Effective October 14, 2026 · covers Peb 0.8.4 and later · applies to the Peb app for Android (<code>com.mmmadigan.peb</code>)</p>
+        </div>
+      </header>
+
+      <section class="tldr">
+        <h2>The short version</h2>
+        <ul>
+          <li>Peb reads your <strong>daily steps</strong> (and, if you allow it, <strong>exercise sessions</strong>) from Health Connect, only to feed and grow your pet.</li>
+          <li>Your steps, health data and pet stay <strong>on your phone</strong>. Peb has no account and no ads.</li>
+          <li>If you leave <strong>"Share anonymous usage and crash data"</strong> on (it's on by default), Peb sends anonymous app-usage events (like "transformed" or "played a mini-game") and crash reports to Google Firebase, so we can fix bugs and see which features get used. <strong>Never</strong> your steps, health data, step goal or pet's name. Turn it off any time in Settings.</li>
+          <li>Peb <strong>never sells or shares</strong> your data, never uploads your health data, and never writes anything to Health Connect.</li>
+          <li>You can turn access off at any time, and uninstalling Peb deletes everything it stored.</li>
+        </ul>
+      </section>
+
+      <h2>Who makes Peb</h2>
+      <p>Peb is made by the independent developer TheMadMadigan ("we"). Questions about this policy: <a href="mailto:hello@themadmadigan.net">hello@themadmadigan.net</a>.</p>
+
+      <h2>What Peb reads from Health Connect, and why</h2>
+      <table>
+        <tr><th>Data</th><th>Why Peb uses it</th><th>Required?</th></tr>
+        <tr><td>Steps (daily totals, last 14 days)</td><td>Your steps fill Peb's food bowl, grow Peb up, charge its head plants for transformations, and power your daily goal, Sun Stones, walking streaks, decorations and the home-screen widget.</td><td>Yes. Peb is a step pet.</td></tr>
+        <tr><td>Exercise sessions (type, start/end time)</td><td>A finished workout gives Peb a small mood boost and a journal line.</td><td>No. Peb works fine without it.</td></tr>
+        <tr><td>Reading in the background</td><td>Lets Peb check your steps about every 45 minutes while the app is closed, so the widget and optional reminders stay current.</td><td>No. Without it, steps update when you open Peb.</td></tr>
+      </table>
+      <p>Peb only asks for these after you tap to connect, using Android's Health Connect permission screen. Peb does not read heart rate, sleep, weight, location or any other health data, and it never writes data to Health Connect.</p>
+      <p>Peb's use of information received from Health Connect follows the <a href="https://support.google.com/googleplay/android-developer/answer/12991134">Health Connect Permissions policy</a>, including the Limited Use requirements. Your health data is used only to provide Peb's features to you. It is never used for advertising, never sold, never shared with or transferred to anyone, and never read by humans.</p>
+
+      <h2>What Peb stores, and where</h2>
+      <p>Peb keeps its data in the app's private storage on your phone:</p>
+      <ul>
+        <li>your pet (name, stats, journal, collected plants, forms, decorations, game scores), your daily step goal, and the Peb Pile of retired Pebs;</li>
+        <li>a short step history (about the last 4 weeks of daily totals) so steps are never counted twice;</li>
+        <li>your settings (sound, notification choices) and a small summary the home-screen widget shows.</li>
+      </ul>
+      <p>None of this is sent anywhere. Peb opts out of Android cloud backup, so it isn't copied to Google Drive either. Moving it directly to a new phone (device-to-device transfer) still works.</p>
+
+      <h2>Anonymous usage and crash data (Firebase)</h2>
+      <p>Peb uses Google's <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong>. They are on by default, and only while the <em>Share anonymous usage and crash data</em> setting is on (Journal → bell tab). Turning it off stops both right away.</p>
+      <ul>
+        <li><strong>App activity:</strong> a short list of in-app events: app opened, egg hatched, plant bloomed (its rarity), Peb transformed (the form, life stage, and whether a secret recipe was used), plant swapped, Peb grew (the stage), Peb retired (generation and form), a mini-game or tidy-up was played (the game and a rough score range like "75–89%"), a Sun Stone was earned, and the step goal was changed (only a range like "8k–10k", never the exact goal). Firebase also records basic session events (first open, session start, time in app).</li>
+        <li><strong>Crash logs and diagnostics:</strong> if Peb crashes, a crash report with the error, the app version, device model and Android version.</li>
+        <li><strong>Device or other IDs:</strong> Firebase uses a random <em>app-instance ID</em> (and Crashlytics an installation ID) to group events from the same install. These are not your name, email, phone number or advertising ID, and reset if you reinstall or clear Peb's data.</li>
+      </ul>
+      <p><strong>Never sent:</strong> step counts, exercise sessions or any other Health Connect data, your exact step goal, your pet's name, your journal, save codes, or anything you type. Peb does not collect the advertising ID, turns off ad personalization and ad storage, does not link Firebase to any ad service, and does not set a user ID. Firebase may infer an approximate country/region from the connection, as Google Analytics does for all apps.</p>
+      <p>This data is sent encrypted (HTTPS) to Google, which processes it for us as a service provider under the <a href="https://firebase.google.com/terms/data-processing-terms">Firebase data processing terms</a>. It is not sold, not used for advertising and not shared with anyone else. Analytics event data is kept for 2 months and crash reports for 90 days, then deleted. To ask for deletion of this data, email us.</p>
+
+      <h2>No other collection or sharing</h2>
+      <p>Apart from the optional usage and crash data above, nothing leaves your device. Peb has no sign-in, no advertising and no tracking across apps. The app's only built-in links open web pages you choose, like Health Connect's Play Store page.</p>
+
+      <h2>Save codes (optional)</h2>
+      <p>In Settings you can copy a "save code" to move your pet to another install. The code contains your pet's save, including recent daily step totals. It is created only when you tap the button and goes only where you paste it. Treat it like a private note.</p>
+
+      <h2>Notifications</h2>
+      <p>If you allow notifications, Peb sends at most two gentle reminders a day (for example "your bowl is full" or "your streak needs a stroll"), never between 9:30 PM and 8 AM. They're created on your phone from your step data. You can turn each type off in Peb's settings, or turn them all off in Android settings.</p>
+
+      <h2>Your choices</h2>
+      <ul>
+        <li>Revoke health access any time: Android <em>Settings → Apps → Health Connect → App permissions → Peb</em> (on some phones: <em>Settings → Security & privacy → Privacy → Health Connect</em>).</li>
+        <li>Stop usage and crash data: turn off <em>Share anonymous usage and crash data</em> in Peb's settings (Journal → bell tab).</li>
+        <li>Delete your data: clear Peb's storage in Android settings, or uninstall Peb. Both remove everything Peb stored on your phone. Anonymous usage and crash data already sent expires on the schedule above, or email us to ask for deletion sooner.</li>
+      </ul>
+
+      <h2>Children</h2>
+      <p>Peb is meant for a general audience aged 13 and up, and it isn't designed for children under 13. Peb does not knowingly collect personal data from children; the optional usage and crash data is anonymous and never includes health data.</p>
+
+      <h2>Security</h2>
+      <p>Your data stays in Android's private app storage, which other apps can't read. Health data and your pet are never transmitted. Usage and crash data travels to Firebase over encrypted HTTPS connections.</p>
+
+      <h2>Changes</h2>
+      <p>If Peb ever handles data differently, this page will be updated before the change ships, with a new effective date at the top. Significant changes will also be announced in the app.</p>
+
+      <footer>
+        <p>Peb privacy policy · <a href="https://gromthepaunch.github.io/peb-privacy/">gromthepaunch.github.io/peb-privacy</a> · Contact: <a href="mailto:hello@themadmadigan.net">hello@themadmadigan.net</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
